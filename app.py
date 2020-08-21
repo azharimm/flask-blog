@@ -5,7 +5,8 @@ app = Flask(__name__)
 all_posts = [
     {
         'title': 'Post One',
-        'content': 'This is the content of the post one'
+        'content': 'This is the content of the post one',
+        'author': 'Azhari'
     },
     {
         'title': 'Post Two',
