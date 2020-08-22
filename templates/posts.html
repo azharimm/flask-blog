@@ -12,6 +12,8 @@
     <form action="/posts" method="POST">
         Title: <input type="text" name="title" id="title">
         <br>
+        Author: <input type="text" name="author" id="author">
+        <br>
         Post: <input type="text" name="content" id="content">
         <br>
         <input type="submit" value="Save">
@@ -25,5 +27,7 @@
             <h3>By: N/A</h3>
         {% endif %}
         <p>{{ post.content }}</p>
+        <a href="/posts/delete/{{post.id}}">Delete</a>
+        <hr>
     {% endfor %}
 {% endblock %}
