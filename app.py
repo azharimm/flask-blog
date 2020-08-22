@@ -53,6 +53,10 @@ def edit(id):
     else:
         return render_template('edit.html', post=post)
 
+@app.route('/posts/new', methods=['GET'])
+def new_post():
+    return render_template('add.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
